@@ -5,23 +5,39 @@
 }
 
 body{
-    margin: 0;
     font-family: 'Roboto', sans-serif;
+    margin: 0;
     
 }
 
 nav{
     display: flex;
     background-color: whitesmoke;
+    width: 100%;
+    letter-spacing:4px;
+    text-decoration: none;
+    z-index: 1;
     padding: 10px;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     position: fixed;
-    width: 100%;
-    letter-spacing:4px;
+}
+
+nav a{
     text-decoration: none;
-    z-index: 1;
+    color: black;
+}
+nav a:hover{
+    padding: 10px 13px;
+    background-color: #205c74;
+    color: white;
+    
+}
+header{
+    text-align: right;
+    max-width: 1600px;
+    min-height: 500px;
 }
 
 .logo{
@@ -35,28 +51,15 @@ nav{
     flex: 70%;
     color: white;
 }
-
-nav a{
-    text-decoration: none;
-    color: black;
-}
-nav a:hover{
-    background-color: #205c74;
-    color: white;
-    padding: 10px 13px;
-}
-header{
-    max-width: 1600px;
-    min-height: 500px;
-    text-align: right;
-}
+    
 .fundo{
     position: absolute;
-    bottom: 70px;
-    right: 140px;
+    bottom: 370px;
+    right: 310px;
     font-size: 10px;
 }
-.primeirobloco{
+
+.bloco1{
     display: flex;
     margin-top: 30px;
     margin-left: auto;
@@ -65,41 +68,56 @@ header{
     width: 50%;
 }
 
-.primeirobloco img{
+.bloco1 img{
     flex: 20%;
 }
+
 .sobre{
     flex: 80%;
     padding: 20px;
     font-size: 12px;
 }
+
 .sobre h1, h5{
     text-align: center
 }
 
-.segundobloco{
+.bloco2{
     display: flex;
     margin-top: 30px;
     margin-left: 25%;
     margin-right: 25%;
     margin-bottom: 30px;
+    padding-right: 19%;
 }
-.segundobloco h1{
+
+.bloco2 h1{
     text-align: center;
 }
-.segundobloco p{
+
+.bloco2 p{
     font-size: 12px;
 }
+
 hr{
     margin-left: 25%;
     margin-right: 25%;
 }
-.terceirobloco{
+.bloco3{
     margin-top: 30px;
     margin-left: 25%;
     margin-right: 25%;
     margin-bottom: 30px;
 }
+
+.bloco3 p{
+    font-size: 11px;
+}
+
+.bloco3 b{
+    color: #205c74;
+}
+
 input{
     width: 100%;
     padding: 10px;
@@ -107,12 +125,6 @@ input{
     border-bottom: 3px solid whitesmoke;
 }
 
-.terceirobloco p{
-    font-size: 11px;
-}
-.terceirobloco b{
-    color: #205c74;
-}
 footer{
     padding: 25px;
     background-color: whitesmoke;
